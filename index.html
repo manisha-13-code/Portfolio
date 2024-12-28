@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/3ff3b0cdb4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+    <div id="header">
+        <div class="container">
+            <nav>
+           <h1>Manisha.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Engineer/ <br>Junior Developer</p>
+            <h1>Hi, I'm <span class="mani">Manisha</span><br> from Ahmedabad.</h1>
+        </div>
+        </div>
+    </div>
+    <!-- --------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio.avif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>As a passionate second-year Computer Science Engineering student, Beyond coding, my strong communication and leadership abilities enhance team collaboration and project success. Eager to innovate and excel, I'm on a journey of continuous learning, seeking opportunities to apply my skills and make a meaningful impact in software engineering.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>DSA, Java, C++, C</li>
+                            <li>Fronted Development</li>
+                            <li>DBMS, OS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Pursuing Engineering in CSE, 2024</li>
+                            <li>Higher Secondary, 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span>My</span> Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Cynthia Ugwu Website Clone</h2>
+                    <p><ul><li>Tech Stack: HTML, CSS, JavaScript.</li>
+                        <li>Description: A portfolio website for Cynthia Ugwu, featuring sections for her bio, work, blog, and contacts with a professional design.</li>
+                        <li>Challenges: Custom UI design to match Cynthia's brand.</li>
+                        <li>Learnings: Improved UI/UX design and dynamic content management using JavaScript.</li>
+                    </ul></p>
+                    <a href="file:///C:/Users/MANISHA%20CHAUHAN/OneDrive/Sigma%20Web%20Development/Cynthia%20Ugwu%20Clone/index.html" class="btn">Demo</a>
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Netflix Website Clone</h2>
+                    <p><ul>
+                        <li>Tech Stack: HTML, CSS.</li>
+                        <li>Description: A Netflix clone focusing on responsive design, showcasing a layout for browsing movie and TV show titles.</li>
+                        <li>Challenges: Creating a carousel for title browsing and achieving a responsive layout with HTML and CSS alone.</li>
+                        <li>Learnings: Deepened understanding of advanced CSS techniques for responsiveness and interactive elements without JavaScript.</li></p>
+                    </ul>
+                    <a href="file:///C:/Users/MANISHA%20CHAUHAN/OneDrive/Sigma%20Web%20Development/cloneWeb/index.html" class="btn">Demo</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Weather App</h2>
+                    <p><ul>
+                        <li>Tech Stack: HTML, CSS, JavaScript.</li>
+                        <li>Description: A weather forecasting app providing real-time weather data, including temperature, humidity, and forecasts.</li>
+                        <li>Challenges: Fetching and displaying real-time data from weather APIs.</li>
+                        <li>Learnings: Mastered API consumption, asynchronous JavaScript, and dynamic UI updates.</li>
+                        <li>Outcome: Praised for accurate weather reporting and user-friendly interface</li>
+                    </ul></p>
+                    <a href="file:///C:/Users/MANISHA%20CHAUHAN/OneDrive/Sigma%20Web%20Development/CloneWeb1/index.html" class="btn">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>My</span> Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Mw1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Showcases professional achievements, projects, and contact info with an elegant design.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Mw-2.png">
+                    <div class="layer">
+                        <h3>Stock Trading Simulator</h3>
+                        <p>Simulates stock market trading, including buying/selling stocks and tracking portfolio performance.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Mw-3.png">
+                    <div class="layer">
+                        <h3>Weather Apps</h3>
+                        <p>Provides real-time weather updates, forecasts, and atmospheric conditions.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manishachauhan5469@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>7249516523</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>z
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Manisha. Made with <i class="fa-solid fa-heart"></i> by Manisha.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
